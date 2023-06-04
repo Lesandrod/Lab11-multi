@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana11A2023.Views.Operacions">
+    <ContentPage.Content>
+        <StackLayout>
+
+          
+                
+            
+       
+
+            <Entry Placeholder="Valor A" Text="{Binding ValorA}"></Entry>
+            <Entry Placeholder="Valor B" Text="{Binding ValorB}"></Entry>
+
+            <Button Text="Sumar" Command="{Binding Sumar}" BorderWidth="1" />
+            <Button Text="Restar" Command="{Binding Restar}" BorderWidth="1"/>
+            <Button Text="Multiplicar" Command="{Binding Multiplicar}" BorderWidth="1" />
+            <Button Text="Dividir" Command="{Binding Dividir}"  BorderWidth="1"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="5">
+                <Label Text="Suma: " FontSize="Large" TextColor="Black"></Label>
+                <Label Text="{Binding ResultadoSuma}" FontSize="Large" TextColor="Black"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="5">
+                <Label Text="Resta: " FontSize="Large" TextColor="Black"></Label>
+                <Label Text="{Binding ResultadoResta}" FontSize="Large" TextColor="Black"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="5">
+                <Label Text="Multiplicación: " FontSize="Large" TextColor="Black"></Label>
+                <Label Text="{Binding ResultadoMultiplicar}" FontSize="Large" TextColor="Black"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="5">
+                <Label Text="División: " FontSize="Large" TextColor="Black"></Label>
+                <Label Text="{Binding ResultadoDividir}" FontSize="Large" TextColor="Black"></Label>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
